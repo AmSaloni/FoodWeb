@@ -1,0 +1,763 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik+Moonrocks&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Moonrocks&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(245, 245, 245, 0.516);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 1;
+}
+#menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+    font-size: larger;
+    color: rgb(22, 44, 22);
+    z-index:1;
+
+}
+#logo{
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-size: x-large;
+    color: rgb(22, 44, 22);
+
+    /* rotate: -2deg; */
+}
+#navigation1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    gap: 20px;
+}
+#navigation2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    z-index: 1;
+}
+#navigation2 img{
+    width: 30px;
+}
+button{
+    padding: 7px;
+    background: rgb(31, 45, 31);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+    font-size: large;
+    cursor: pointer;
+    width: fit-content;
+}
+#Section2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#sec1{
+    width: 50%;
+    height: 100vh;
+    /* background: beige; */
+    background: blanchedalmond;
+
+}
+#sec2{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    /* background: #000; */
+    /* overflow: hidden; */
+}
+#sec2 img{
+    /* width: 100%; */
+    overflow: hidden;
+    /* z-index: 0; */
+    /* position: relative; */
+    /* background-repeat: no-repeat; */
+    height:100%;
+}
+#sec2 #food_bg1{
+    overflow: hidden;
+    height: 100%;
+    /* position:relative; */
+    /* background-image: url('https://img.freepik.com/premium-photo/fast-food-white-background-beautiful-illustration-picture-generative-ai_146671-77955.jpg'); */
+}
+#plate {
+    position:absolute;
+    overflow: hidden;
+    /* z-index: 1; */
+    top: -2%;
+    right: 15%;
+    width: 550px;
+    height: 20px;
+    animation: spin 15s linear infinite;
+    transform-origin: center;
+    will-change: transform;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    100% {
+        transform: rotate(360deg) translate3d(0, 0, 0);
+    }
+}
+
+
+#sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left:100px ;  
+    padding-right:60px ;  
+    /* font-size:x-large;  */
+}
+#sec1 h1{
+    /* font-family: "Sour Gummy", sans-serif; */
+    color: rgb(22, 44, 22);
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+#sec1 p{
+    /* font-family: "Sour Gummy", sans-serif; */
+    color: rgb(22, 44, 22);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+
+}
+#m1{
+    display: flex;
+    column-gap: 30px;
+}
+#Circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#c1{
+    width: 30px;
+    border: 1px solid white;
+    height: 30px;
+    cursor: pointer;
+    background: #bb9191;
+    background-image: url('https://media.istockphoto.com/id/1385278106/photo/west-african-entree-of-jollof-rice-fish-and-salad.jpg?s=612x612&w=0&k=20&c=wmj_CUt834SuhXGnI_auaYImK0oaB7bmPXqRZu5Ik3k=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+#c2{
+    width: 30px;
+    border: 1px solid white;
+    height: 30px;
+    cursor: pointer;
+    background: #bb9191;
+    background-image: url('https://i.ytimg.com/vi/vbBvut03nss/sddefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+#c3{
+    width: 30px;
+    border: 1px solid white;
+    height: 30px;
+    background: #bb9191;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaO1EOrs7x2m9g5NtXU7jBNmvBYAIFlMygSgcPenJJZjXM54x9CFdjYWWcW-yqAehaRU0QYpaUm7igJ5KOc0a84zTVmMn1-6IbUa9hqsgaoBFx-QAdUkvCNMRzSAUr91NcZhnoPhyphenhyphenq6F65/s1600/Chicken+Chop+Sedap+dan+Murah+di+Selera+Bos%252C+Waterfront+Kuala+Terengganu+%25282%2529.JPG');
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+#bContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    /* z-index: 1; */
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    /* padding: 40px; */
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+
+    height: 80px;
+    border-radius: 10px;
+    column-gap: 30px;
+    background:rgba(78, 77, 77, 0.515);
+    /* background: #000; */
+    z-index: 0;
+}
+
+#con1{
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* height: 50px; */
+    position: relative;
+    padding:5px 2px 5px 2px;
+    background: white;
+    display: flex;
+    align-items: center;
+    /* column-gap: 10px; */
+    justify-content: space-evenly;
+}
+#con1 #d1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background: #000; */
+    background-image: url('https://images.deliveryhero.io/image/fd-sg/Products/18228636.jpg?width=%s');
+background-size: cover;
+}
+#d3 img{
+    width: 25px;
+}
+#d22{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#d22 h2{
+    color: orangered;
+}
+#section3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    /* background-image: url('https://i.pinimg.com/736x/46/26/7a/46267a3aee99bce0cf9fcef34fb0c6b7.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* column-gap: -100%; */
+    /* background: #000; */
+    /* background: #11292aa6; */
+    /* background: linear-gradient(#d7c32a6f,white); */
+    /* background: linear-gradient(rgba(216, 128, 69, 0.571),rgba(216, 128, 69, 0.33)); */
+    background: rgba(227, 184, 155, 0.571);
+}
+#section3 #sec31{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section3 #sec31 #img1{
+    width: 670px;
+    height: 600px; 
+    position: absolute;
+    bottom: 0;
+}
+#section3 #sec32{
+    /* background: #ffff3f; */
+    /* background:#525237 ; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    justify-content: center;
+    row-gap: 20px;
+    padding: 60px;
+    height: 100%;
+    color:rgb(22, 44, 22);
+    /* -webkit-text-stroke: 1px rgb(22, 44, 22); */
+    /* color: rgb(205, 50, 50); */
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+#sec32 h1{
+    font-size: 55px;
+    font-weight: 700;
+    /* -webkit-text-stroke:1px rgb(0, 0, 0); */
+}
+/* #sec32 p{
+    font-family: "Poppins", sans-serif;
+} */
+/* #b1{
+    width: fit-content;
+} */
+#leaf{
+    width: 200px;
+    display: flex;
+    margin-left: 260px;
+    margin-top: -60px;
+    rotate:80deg
+}
+#leaf1{
+    width: 200px;
+    display: flex;
+    margin-left: -500px;
+    margin-top: -350px;
+    rotate:-90deg
+}
+#section4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(22, 44, 22);
+    justify-content: center;
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    /* background: rgba(228, 226, 222, 0.578); */
+    background: rgba(34, 70, 5, 0.648);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    /* background: rgb(230, 230, 186); */
+/* background: linear-gradient(to right,white,rgb(72, 63, 64)); */
+
+    
+}
+#section4 h2{
+    font-size: 23px;
+    color: rgb(22, 44, 22);
+}
+#sec41{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* background: #000; */
+    height: 100%;
+}
+#sec42{
+    width: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* background: #401c1c; */
+}
+#card11 img{
+    width:450px ;
+    height:350px ;
+    border-radius: 5px;
+    box-shadow: rgba(204, 201, 201, 0.986) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+}
+#division{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    border-radius: 10px;
+    background: rgba(5, 5, 5, 0.205);
+    padding: 20px;
+}
+#card1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#card11{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+#span1{
+    color:rgb(22, 44, 22) ;
+    /* color:orangered ; */
+}
+#section5{
+    width: 100%;
+    height: 100%;
+    /* padding-left: 300px; */
+    /* padding-right: 300px; */
+    padding: 300px;
+    display: flex;
+    align-items: center;
+    position:relative;
+justify-content: center;
+text-align: center;
+background: #472d2d2e;
+overflow: hidden;
+/* background: linear-gradient(to left,white,rgb(246, 214, 219)); */
+}
+#section5 h1{
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    color:rgb(22, 44, 22) ;
+}
+#section5 #i1{
+    position: absolute;
+    width: 200px;
+   left: 30px;
+   top: 270px;
+   border-radius: 10px;
+}
+#section5 #i2{
+    position: absolute;
+    border-radius: 10px;
+    width: 110px;
+    left: 250px;
+    top: 80px;
+    
+}
+#section5 #i3{
+    position: absolute;
+    border-radius: 10px;
+    width: 150px;
+    left: 550px;
+    top: 20px;
+    
+}
+#section5 #i4{
+    position: absolute;
+    border-radius: 10px;
+    width: 180px;
+    left: 400px;
+    top: 530px;
+    filter: blur(10px);
+    
+}
+#section5 #i5{
+    position: absolute;
+    border-radius: 10px;
+    width: 150px;
+    left: 1100px;
+    top: 10px;
+}
+#section5 #i6{
+    position: absolute;
+    border-radius: 10px;
+    width: 90px;
+    left: 660px;
+    top: 550px;
+    
+    
+}
+#section5 #i7{
+    position: absolute;
+    width: 150px;
+    left: 860px;
+    border-radius: 10px;
+    filter: blur(5px);
+    top: 59px;
+    
+}
+#section5 #i8{
+    position: absolute;
+    border-radius: 10px;
+    width: 140px;
+    left: 900px;
+    top: 600px;
+    
+}
+#section5 #i9{
+    position: absolute;
+    border-radius: 10px;
+    width: 250px;
+    filter: blur(10px);
+    left: 1100px;
+    top: 550px;
+    
+}
+#section5 #i9:hover{
+    filter: blur(0px);
+}
+#section5 #i4:hover{
+    filter: blur(0px);
+}
+#section5 #i7:hover{
+    filter: blur(0px);
+}
+#section5 #i10{
+    position: absolute;
+    border-radius: 10px;
+    width: 110px;
+    left: 1300px;
+    top: 300px;
+}
+
+#section5 img:hover{
+    transform: rotateY(-20deg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* transform: rotateX(50deg); */
+    transition: 0.2s;
+    /* filter: blur(0); */
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    row-gap: 35px;
+    background:rgba(245, 245, 220, 0.901);
+    /* font-family: "Sour Gummy", sans-serif; */
+    font-family: "Poppins", sans-serif;
+
+}
+footer #part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+#part1 img{
+    width: 200px;
+}
+#part2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    column-gap: 60px;
+}
+select{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    background: rgba(245, 245, 245, 0.381);
+    border-radius: 5px;
+    border:1px solid rgb(86, 79, 79);
+}
+#d{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    
+}
+#logo1{
+    font-family: "Rubik Moonrocks", sans-serif;
+    font-size: 40px;
+    color: rgb(22, 44, 22);
+}
+#lastP{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+#links{
+    display:flex;
+    column-gap: 15px;
+}
+#p2,#p3,#p4,#p5,#p7{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+#last{
+    width: 100%;
+    height: 8%;
+    /* background: #ccd2aa; */
+    background:rgba(103, 103, 4, 0.326);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*==========Cards Section========*/
+#food{
+    padding: 20px ;
+    font-family: "Poppins", sans-serif;
+
+}
+.food-container{
+     max-width: 90vw;
+    margin: 0 auto;
+}
+.food-card{
+    position: relative;
+    /* background: linear-gradient(rgba(205, 96, 0, 0.7),rgba(205,96,0,0.7)); */
+    /* margin:20px 0; */
+    color: #000;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 10px;
+    /* border: 1px solid orange; */
+    /* box-shadow: 2px 3px 1px 1px #cd6100; */
+}
+
+#food img{
+    border-radius: 10px;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 1s;
+}
+
+.img-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.img-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 20px;
+    opacity: 0;
+    color: #000;
+    transition: opacity 1.2s;
+}
+.img-text h1{
+    font-size: 50px;
+    color:rgb(31, 45, 31);
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.food-card:hover img{
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+.food-card:hover .img-text,
+.food-card:hover  .img-footer,
+.food-card:hover  .img-text h1{
+    opacity:1;
+}
+.food-btn{
+    display: inline-block;
+    background:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px 32px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 180px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: all 0.3s ease-in-out;
+    font-size:18px;
+    outline:none;
+}
+.food-btn:hover{
+    color: rgba(223, 218, 210, 0.208);
+    background:#ffff;
+    border: #000;
+    outline: none;
+}
+.fas{
+    font-size: 30px;
+}
+@media screen and (min-width: 576px){
+    .food-container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-column-gap: 16px;
+    }
+}
+@media screen and (min-width: 992px){
+    .food-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-column-gap:16px ;
+    }
+}
+/*========End of Cards Section=======*/
+
+
+
+
+/*==========Numbers/ Counters=======*/
+.number{
+    font-family: "Poppins", sans-serif;
+
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
+     url('https://st4.depositphotos.com/4590583/21625/i/450/depositphotos_216252430-stock-photo-set-dishes-georgian-cuisine-blue.jpg') center/cover fixed no-repeat;
+    padding: 60px 0;
+    color:#fff;
+ }
+ .number p{
+     font-size: 30px;
+     font-weight: bold;
+ }
+.number:hover{
+    /* color: rgb(22, 44, 22); */
+    color: orangered;
+    /* font-size: 20px; */
+    cursor: pointer;
+}
+.number .fas{
+    font-size: 60px;
+    margin: 20px 0;
+}
+.number h3{
+    /* border: 1px solid white; */
+    text-transform: uppercase;
+}
+@media screen and (min-width:576PX){
+    #numbers {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    #numbers{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+#spice {
+    font-size: 51px;
+}
+#spice:hover{
+    transform: rotateX(10deg);
+    /* font-size: 53px; */
+    color: orangered;
+    text-decoration: underline;
+    transition: 0.2s;
+    cursor: pointer;
+}
+button:hover{
+    background: orangered;
+
+}
